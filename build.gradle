@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+}
+
+group = 'mobileAutomationWithPom'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
+    testImplementation 'org.seleniumhq.selenium:selenium-java:4.11.0'
+
+    // https://mvnrepository.com/artifact/io.appium/java-client
+    testImplementation 'io.appium:java-client:8.5.1'
+
+    // https://mvnrepository.com/artifact/org.testng/testng
+    testImplementation 'org.testng:testng:7.8.0'
+}
+
+test {
+    useTestNG()
+}
