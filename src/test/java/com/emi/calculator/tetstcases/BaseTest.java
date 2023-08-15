@@ -31,5 +31,9 @@ public class BaseTest {
         }
     }
 
+    public AndroidDriver getDriver() {
+        return driver;
+    }
+
 
 }

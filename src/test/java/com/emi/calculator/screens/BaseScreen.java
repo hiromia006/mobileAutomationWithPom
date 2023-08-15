@@ -1,5 +1,7 @@
 package com.emi.calculator.screens;
 
+import com.aventstack.extentreports.Status;
+import com.emi.calculator.report.ReportTestManager;
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -18,7 +20,7 @@ public class BaseScreen extends Screen {
         try {
             waitForWebElement(locator);
             webElement = driver.findElement(locator);
-
+            addInfoLog("has been located " + locator.toString());
         } catch (Exception exception) {
             System.out.println(locator.toString() + " No found");
         }
@@ -46,4 +48,10 @@ public class BaseScreen extends Screen {
             System.out.println(locator.toString() + " Not Loading");
         }
     }
+
+    public void addInfoLog(String message) {
+        if (ReportTestManager.getTest() != null)
+            ReportTestManager.getTest().log(Status.INFO, message);
+    }
+
 }
