@@ -16,7 +16,7 @@ public class ReportManager {
     }
 
 
-    public static ExtentReports createInstance() {
+    private static ExtentReports createInstance() {
         if (extent == null) {
             String workingDir = System.getProperty("user.dir");
             String reportName = "Report.html";
