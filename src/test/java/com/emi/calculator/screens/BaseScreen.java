@@ -49,9 +49,4 @@ public class BaseScreen extends Screen {
         }
     }
 
-    public void addInfoLog(String message) {
-        if (ReportTestManager.getTest() != null)
-            ReportTestManager.getTest().log(Status.INFO, message);
-    }
-
 }
