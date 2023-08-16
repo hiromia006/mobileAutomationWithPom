@@ -38,7 +38,7 @@ public class BaseTest {
         driver.quit();
     }
 
-    public AndroidDriver getDriver() {
+    public AndroidDriver getWebDriver() {
         return driver;
     }
 
