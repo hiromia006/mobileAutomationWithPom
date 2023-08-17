@@ -54,4 +54,5 @@ public class BaseScreen extends Screen {
             ReportTestManager.getTest().log(Status.INFO, message);
     }
 
+
 }

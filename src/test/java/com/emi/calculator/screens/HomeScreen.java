@@ -21,11 +21,13 @@ public class HomeScreen extends BaseScreen {
         return getInstance(CompareLoanScreen.class);
     }
 
-    public boolean hasEmiCalculatorBtn() {
+    public boolean hasEmiCalculateBtn() {
         return getWebElements(btnStart).size() > 0;
     }
 
     public boolean hasCompareLoanBtn() {
         return getWebElements(btnCompare).size() > 0;
     }
+
+
 }

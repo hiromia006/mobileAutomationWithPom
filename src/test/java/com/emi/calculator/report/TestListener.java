@@ -3,9 +3,9 @@ package com.emi.calculator.report;
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 import com.emi.calculator.tetstcases.BaseTest;
-import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -59,7 +59,7 @@ public class TestListener implements ITestListener {
         System.out.println("I am in onTestFailure method " + getTestMethodName(iTestResult) + " failed");
 
         Object testClass = iTestResult.getInstance();
-        AndroidDriver webDriver = ((BaseTest) testClass).getDriver();
+        WebDriver webDriver = ((BaseTest) testClass).getWebDriver();
 
         // Take base64Screenshot screenshot.
         String base64Screenshot = "data:image/png;base64,"

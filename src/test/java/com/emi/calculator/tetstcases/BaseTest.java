@@ -4,6 +4,7 @@ import com.emi.calculator.screens.BaseScreen;
 import com.emi.calculator.screens.Screen;
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
 import java.net.MalformedURLException;
@@ -31,7 +32,13 @@ public class BaseTest {
         }
     }
 
-    public AndroidDriver getDriver() {
+
+    @AfterClass
+    public void tearDown() {
+        driver.quit();
+    }
+
+    public AndroidDriver getWebDriver() {
         return driver;
     }
 

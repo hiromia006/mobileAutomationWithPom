@@ -4,9 +4,11 @@
     <listeners>
         <listener class-name="com.emi.calculator.report.TestListener"></listener>
     </listeners>
-    <test verbose="2" preserve-order="true" name="Home Screen">
+    <test verbose="2" preserve-order="true" name="/home/jannat/bitbucket/mobileAutomationWithPom">
         <classes>
             <class name="com.emi.calculator.tetstcases.HomeTest"></class>
+            <class name="com.emi.calculator.tetstcases.EmiCalculatorTest"></class>
+            <class name="com.emi.calculator.tetstcases.CompareLoanTest"></class>
         </classes>
     </test>
 </suite>
