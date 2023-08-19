@@ -21,6 +21,10 @@ dependencies {
 
     // https://mvnrepository.com/artifact/com.aventstack/extentreports
     testImplementation 'com.aventstack:extentreports:5.1.0'
+
+    testImplementation group: 'commons-codec', name: 'commons-codec', version: '1.15'
+    // FileUtils.copyFile
+    testImplementation 'commons-io:commons-io:2.11.0'
 }
 
 test {
