@@ -19,6 +19,7 @@ dependencies {
     // https://mvnrepository.com/artifact/org.testng/testng
     testImplementation 'org.testng:testng:7.8.0'
 
+    //Extent Report
     // https://mvnrepository.com/artifact/com.aventstack/extentreports
     testImplementation 'com.aventstack:extentreports:5.1.0'
 
