@@ -52,24 +52,13 @@ First we have to make your system ready then we can start our journey with appiu
 
 ## Appium Inspector to Identify Elements
 1. [Appium Inspector download & install](https://github.com/appium/appium-inspector/releases)
-2. **Configure Appium Desktop client & Appium Inspector**
-  - Appium Desktop
-     -  Go to Appium Server GUI -> Advanced
-        -  Server address: localhost
-        -  Port: 4723
-        - Allow CORP: yes
-        
+2. **Configure  Appium Inspector**
  - Appium Inspector
     -  Go to or Open Appium Inspector
         -  Remote host: localhost
         -  Port: 4723
         - Path: /wd/hub
         - Allow Unauthorized Certificates
-  - Select your capabilities  ![img.png](images/img.png)
-  -  Start Appium Server GUI First ![img.png](images/img_1.png)
-  -  Appium Inspector server
-     ![img.png](images/img_2.png)
-  - Appium Inspector will open ![img.png](images/img_3.png)
 
 ### Run Test Case
 * **Run Test Case** - Go to desired Java Class where has Test Case, Right click of mouse on Test Case >> click on Run
