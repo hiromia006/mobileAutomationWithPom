@@ -60,7 +60,7 @@ First we have to make your system ready then we can start our journey with appiu
         - Path: /wd/hub
         - Allow Unauthorized Certificates
 2. **Set DesiredCapabilities**
-- capabilities.setCapability("udid", "192.168.56.101:5555");
+--  capabilities.setCapability("udid", "192.168.56.101:5555");
 - capabilities.setCapability("platformVersion", "12");
 - capabilities.setCapability("appPackage", "com.bng.calculator");
 - capabilities.setCapability("appActivity", "com.bng.calc.MainActivity");
