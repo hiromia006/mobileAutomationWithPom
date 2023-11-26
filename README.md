@@ -29,8 +29,9 @@ First we have to make your system ready then we can start our journey with appiu
 4. Install uiautomator2 & execute-driver driver: appium driver install uiautomator2, appium plugin install execute-driver
 5. check plugin list: appium plugin list
 6. Install Plugin: appium plugin install plugin_name
-7. Set default path: appium --base-path /wd/hub
+7. Run with path: appium --base-path /wd/hub
 8. Run Appium: appium
+9. Run Appium plugin & path: appium --use-plugins=execute-driver --base-path /wd/hub
 
 ### Related Resources
 * [Appium NPM](https://www.npmjs.com/package/appium)
@@ -59,13 +60,16 @@ First we have to make your system ready then we can start our journey with appiu
         -  Port: 4723
         - Path: /wd/hub
         - Allow Unauthorized Certificates
-2. **Set DesiredCapabilities**
---  capabilities.setCapability("udid", "192.168.56.101:5555");
+3. **Set DesiredCapabilities**
+- capabilities.setCapability("udid", "192.168.56.101:5555");
 - capabilities.setCapability("platformVersion", "12");
 - capabilities.setCapability("appPackage", "com.bng.calculator");
 - capabilities.setCapability("appActivity", "com.bng.calc.MainActivity");
 - capabilities.setCapability("platformName", "Android");
 - capabilities.setCapability("automationName", "UiAutomator2");
+4. **Disable Permission Monitoring**
+- Go to developer option.
+- Go to last option called --> Disable Permission Monitoring --> enable it.
 
 ### Run Test Case
 * **Run Test Case** - Go to desired Java Class where has Test Case, Right click of mouse on Test Case >> click on Run
