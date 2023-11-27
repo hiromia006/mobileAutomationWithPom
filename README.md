@@ -31,7 +31,7 @@ First we have to make your system ready then we can start our journey with appiu
 6. Install Plugin: appium plugin install plugin_name
 7. Run with path: appium --base-path /wd/hub
 8. Run Appium: appium
-9. Run Appium plugin & path: appium --use-plugins=execute-driver --base-path /wd/hub
+9. Run Appium with plugin & path: appium --use-plugins=execute-driver --base-path /wd/hub
 
 ### Related Resources
 * [Appium NPM](https://www.npmjs.com/package/appium)
