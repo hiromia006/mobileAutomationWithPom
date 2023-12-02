@@ -75,6 +75,11 @@ First we have to make your system ready then we can start our journey with appiu
 * **Run Test Case** - Go to desired Java Class where has Test Case, Right click of mouse on Test Case >> click on Run
 * **Run XML File** - After create TestNG file, Right click of mouse on TestNG xml >> click on Run
 
+### Download Genymotion Emulator & Download Apk from Google Play
+* [Download Genymotion Emulator](https://www.genymotion.com/download/)
+* [Downloads – Oracle VM VirtualBox](https://www.virtualbox.org/wiki/Downloads)https://www.virtualbox.org/wiki/Downloads)
+* [Download Apk from Google Play](https://apps.evozi.com/apk-downloader/)
+
 ### Related Resources
 * [Troubleshoot Activities Startup](https://appium.io/docs/en/writing-running-appium/android/activity-startup/)
 * [Appium API Documentation](https://appium.io/docs/en/about-appium/api/)
