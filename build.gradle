@@ -29,5 +29,11 @@ dependencies {
 }
 
 test {
-    useTestNG()
+    useTestNG() {
+        if (project.hasProperty('testng.suites')) {
+            project.property('testng.suites').toString().split(',').each { suite ->
+                suites 'src/test/resources/' + suite + '-suite.xml'
+            }
+        }
+    }
 }
